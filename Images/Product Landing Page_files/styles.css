@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+    
+}
+
+  @media (max-width: 750px) {
+    h2 {
+      color: black;
+    }
+  }
+  
+  .features {
+   display: block
+    
+  }
+
+   h2 {
+    display: 
+    justify-content: left;
+    color: red;
+    top: 25px;
+    }
+  .nav-bar {
+    display: fixed; 
+  }
+
+img {
+    width: 100px;
+    position: relative;
+    top: 1px;
+    
+   
+  
+}
+  

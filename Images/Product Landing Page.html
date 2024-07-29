@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Landing Page</title>
+    
+  <link rel="stylesheet" href="./Product Landing Page_files/styles.css"></head>
+  <body>
+	<header id="header">
+    <nav id="nav-bar" class="nav-bar">
+      <a class="nav-link" href="http://127.0.0.1:5500/index.html#Features">Features</a>
+      <a class="nav-link" href="http://127.0.0.1:5500/index.html#Video_clip">Video-clip</a>
+      <a class="nav-link" href="http://127.0.0.1:5500/index.html#Cost">Cost</a>
+    <img id="header-img" src="http://127.0.0.1:5500/index.html">
+    </nav>
+    <h2 id="Features">Features</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <label> Enter your email to get started
+  <input type="email" id="email" name="email" placeholder="example@test.com"> 
+  <input type="submit" value="Get started" id="submit"> 
+      </label>
+    </form>
+    <div class="features">
+     <img src="./Product Landing Page_files/download.png">
+     <h2>Fast Delivery</h2>
+     <p>Same Day Delivery</p>
+    </div>
+
+      <img src="./Product Landing Page_files/images.png">
+      <h2>Insane battery life</h2>
+     <p>These phones last for up to a day</p>
+     <p>(Battery life varies by use)</p>
+
+     <img src="./Product Landing Page_files/download (1).png">
+     <h2>Perfect Materials</h2>
+     <p>Our phones our made with pure titaimium</p>
+    
+    <h2 id="Video_clip">Video clip</h2>
+    <iframe id="video" src="./Product Landing Page_files/watch.html"></iframe>
+    <h2 id="Cost">Cost</h2>
+  </header>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
